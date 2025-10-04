@@ -1,0 +1,1325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skills Laboratory - Harsha Dev | Interactive Technical Demonstrations</title>
+    <meta name="description" content="Explore interactive technical demonstrations, skill assessments, and hands-on coding experiences. Test your skills alongside mine in this comprehensive technology playground." />
+    <meta name="keywords" content="Python Skills, AI Expertise, Technical Assessment, Interactive Coding, AWS Certification, Skills Demonstration" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fharshadev1149back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"></script>
+</head>
+<body class="bg-background text-text-primary font-inter transition-all duration-300" id="main-body">
+    <!-- Navigation Header -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-primary-200 transition-all duration-300" id="main-nav">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-accent-600 rounded-lg flex items-center justify-center">
+                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0L19.2 12l-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-bold text-primary-800">Harsha Dev</h1>
+                        <p class="text-xs text-text-secondary font-mono">Code Architect</p>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="homepage.html" class="text-text-secondary hover:text-primary-800 transition-colors duration-300">Home</a>
+                    <a href="about.html" class="text-text-secondary hover:text-primary-800 transition-colors duration-300">About</a>
+                    <a href="skills_laboratory.html" class="text-accent-600 font-medium border-b-2 border-accent-600 pb-1">Skills Lab</a>
+                    <a href="services.html" class="text-text-secondary hover:text-primary-800 transition-colors duration-300">Services</a>
+                    <a href="contact.html" class="text-text-secondary hover:text-primary-800 transition-colors duration-300">Contact</a>
+                </div>
+
+                <!-- Theme Toggle & Mobile Menu -->
+                <div class="flex items-center space-x-4">
+                    <button id="theme-toggle" class="p-2 rounded-lg bg-primary-100 hover:bg-primary-200 transition-colors duration-300">
+                        <svg class="w-5 h-5 text-primary-700" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z"/>
+                        </svg>
+                    </button>
+                    <button class="md:hidden p-2 rounded-lg bg-primary-100 hover:bg-primary-200 transition-colors duration-300" id="mobile-menu-toggle">
+                        <svg class="w-6 h-6 text-primary-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div class="md:hidden hidden bg-background border-t border-primary-200" id="mobile-menu">
+            <div class="px-4 py-4 space-y-3">
+                <a href="homepage.html" class="block text-text-secondary hover:text-primary-800 transition-colors duration-300">Home</a>
+                <a href="about.html" class="block text-text-secondary hover:text-primary-800 transition-colors duration-300">About</a>
+                <a href="skills_laboratory.html" class="block text-accent-600 font-medium">Skills Lab</a>
+                <a href="services.html" class="block text-text-secondary hover:text-primary-800 transition-colors duration-300">Services</a>
+                <a href="contact.html" class="block text-text-secondary hover:text-primary-800 transition-colors duration-300">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-20 pb-12 bg-gradient-to-br from-background via-primary-50 to-accent-50 relative overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-5">
+            <div class="absolute inset-0" style="background-image: url('data:image/svg+xml,<svg width=" 60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><g fill="%23000000" fill-opacity="0.1"><circle cx="30" cy="30" r="2"></circle></g>'); background-size: 60px 60px;"></g></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="text-center">
+                <div class="inline-flex items-center px-4 py-2 bg-accent-100 text-accent-800 rounded-full text-sm font-medium mb-6">
+                    <span class="w-2 h-2 bg-accent-500 rounded-full mr-2 animate-pulse"></span>
+                    Interactive Skills Playground
+                </div>
+                <h1 class="text-4xl lg:text-6xl font-bold text-primary-800 leading-tight mb-6">
+                    Skills <span class="text-accent-600 font-mono">Laboratory</span>
+                </h1>
+                <p class="text-xl text-text-secondary leading-relaxed max-w-3xl mx-auto mb-8">
+                    Explore interactive technical demonstrations, test your skills alongside mine, and dive deep into hands-on coding experiences. This is where theory meets practice.
+                </p>
+
+                <!-- Quick Navigation -->
+                <div class="flex flex-wrap justify-center gap-4 mb-8">
+                    <button onclick="scrollToSection('certifications')" class="px-4 py-2 bg-warning-100 text-warning-800 rounded-full text-sm font-medium hover:bg-warning-200 transition-colors duration-300">
+                        Certifications
+                    </button>
+                    <button onclick="scrollToSection('technical-skills')" class="px-4 py-2 bg-accent-100 text-accent-800 rounded-full text-sm font-medium hover:bg-accent-200 transition-colors duration-300">
+                        Technical Skills
+                    </button>
+                    <button onclick="scrollToSection('code-playground')" class="px-4 py-2 bg-primary-100 text-primary-800 rounded-full text-sm font-medium hover:bg-primary-200 transition-colors duration-300">
+                        Code Playground
+                    </button>
+                    <button onclick="scrollToSection('skill-assessments')" class="px-4 py-2 bg-success-100 text-success-800 rounded-full text-sm font-medium hover:bg-success-200 transition-colors duration-300">
+                        Assessments
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications & Credentials -->
+    <section id="certifications" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-primary-800 mb-4">Professional Certifications</h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">Industry-recognized credentials that validate my expertise and commitment to continuous learning.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- AWS Certification -->
+                <div class="bg-gradient-to-br from-warning-50 to-warning-100 rounded-2xl p-8 text-center hover:shadow-elevation-lg transition-all duration-300 transform hover:-translate-y-1">
+                    <div class="w-20 h-20 bg-warning-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary-800 mb-2">AWS Certified</h3>
+                    <p class="text-warning-700 font-semibold mb-2">Solutions Architect Professional</p>
+                    <p class="text-sm text-text-secondary mb-4">Issued: March 2024</p>
+                    <div class="bg-warning-200 rounded-lg p-3">
+                        <p class="text-xs text-warning-800 font-medium">Credential ID: AWS-SAP-2024-HD789</p>
+                    </div>
+                </div>
+
+                <!-- Python Certification -->
+                <div class="bg-gradient-to-br from-accent-50 to-accent-100 rounded-2xl p-8 text-center hover:shadow-elevation-lg transition-all duration-300 transform hover:-translate-y-1">
+                    <div class="w-20 h-20 bg-accent-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary-800 mb-2">Python Expert</h3>
+                    <p class="text-accent-700 font-semibold mb-2">Advanced Python Developer</p>
+                    <p class="text-sm text-text-secondary mb-4">5+ Years Experience</p>
+                    <div class="bg-accent-200 rounded-lg p-3">
+                        <p class="text-xs text-accent-800 font-medium">Verified by 50+ Projects</p>
+                    </div>
+                </div>
+
+                <!-- AI/ML Certification -->
+                <div class="bg-gradient-to-br from-success-50 to-success-100 rounded-2xl p-8 text-center hover:shadow-elevation-lg transition-all duration-300 transform hover:-translate-y-1">
+                    <div class="w-20 h-20 bg-success-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary-800 mb-2">AI Specialist</h3>
+                    <p class="text-success-700 font-semibold mb-2">Machine Learning & NLP</p>
+                    <p class="text-sm text-text-secondary mb-4">TensorFlow Certified</p>
+                    <div class="bg-success-200 rounded-lg p-3">
+                        <p class="text-xs text-success-800 font-medium">Google AI Certified</p>
+                    </div>
+                </div>
+
+                <!-- Education Certification -->
+                <div class="bg-gradient-to-br from-primary-50 to-primary-100 rounded-2xl p-8 text-center hover:shadow-elevation-lg transition-all duration-300 transform hover:-translate-y-1">
+                    <div class="w-20 h-20 bg-primary-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary-800 mb-2">Mentor</h3>
+                    <p class="text-primary-700 font-semibold mb-2">Technical Education</p>
+                    <p class="text-sm text-text-secondary mb-4">200+ Students Guided</p>
+                    <div class="bg-primary-200 rounded-lg p-3">
+                        <p class="text-xs text-primary-800 font-medium">95% Success Rate</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Skills Matrix -->
+    <section id="technical-skills" class="py-16 bg-primary-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-primary-800 mb-4">Technical Skills Matrix</h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">Interactive visualization of my technical expertise across different domains and technologies.</p>
+            </div>
+
+            <!-- Skill Categories -->
+            <div class="grid lg:grid-cols-2 gap-12">
+                <!-- Programming Languages -->
+                <div class="bg-white rounded-2xl p-8 shadow-elevation">
+                    <h3 class="text-2xl font-bold text-primary-800 mb-6 flex items-center">
+                        <svg class="w-6 h-6 text-accent-600 mr-3" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0L19.2 12l-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/>
+                        </svg>
+                        Programming Languages
+                    </h3>
+                    <div class="space-y-6">
+                        <!-- Python -->
+                        <div class="skill-item" data-skill="python">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="font-semibold text-primary-800">Python</span>
+                                <span class="text-sm text-accent-600 font-mono">95%</span>
+                            </div>
+                            <div class="w-full bg-primary-200 rounded-full h-3">
+                                <div class="bg-gradient-to-r from-accent-500 to-accent-600 h-3 rounded-full transition-all duration-1000 ease-out" style="width: 0%" data-width="95%"></div>
+                            </div>
+                            <p class="text-sm text-text-secondary mt-2">5+ years • Django, Flask, FastAPI, Data Science, ML</p>
+                        </div>
+
+                        <!-- JavaScript -->
+                        <div class="skill-item" data-skill="javascript">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="font-semibold text-primary-800">JavaScript</span>
+                                <span class="text-sm text-accent-600 font-mono">85%</span>
+                            </div>
+                            <div class="w-full bg-primary-200 rounded-full h-3">
+                                <div class="bg-gradient-to-r from-warning-400 to-warning-500 h-3 rounded-full transition-all duration-1000 ease-out" style="width: 0%" data-width="85%"></div>
+                            </div>
+                            <p class="text-sm text-text-secondary mt-2">Node.js, React, Vue.js, ES6+</p>
+                        </div>
+
+                        <!-- SQL -->
+                        <div class="skill-item" data-skill="sql">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="font-semibold text-primary-800">SQL</span>
+                                <span class="text-sm text-accent-600 font-mono">90%</span>
+                            </div>
+                            <div class="w-full bg-primary-200 rounded-full h-3">
+                                <div class="bg-gradient-to-r from-primary-500 to-primary-600 h-3 rounded-full transition-all duration-1000 ease-out" style="width: 0%" data-width="90%"></div>
+                            </div>
+                            <p class="text-sm text-text-secondary mt-2">PostgreSQL, MySQL, MongoDB, Query Optimization</p>
+                        </div>
+
+                        <!-- Go -->
+                        <div class="skill-item" data-skill="go">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="font-semibold text-primary-800">Go</span>
+                                <span class="text-sm text-accent-600 font-mono">75%</span>
+                            </div>
+                            <div class="w-full bg-primary-200 rounded-full h-3">
+                                <div class="bg-gradient-to-r from-success-400 to-success-500 h-3 rounded-full transition-all duration-1000 ease-out" style="width: 0%" data-width="75%"></div>
+                            </div>
+                            <p class="text-sm text-text-secondary mt-2">Microservices, Concurrent Programming</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Frameworks & Technologies -->
+                <div class="bg-white rounded-2xl p-8 shadow-elevation">
+                    <h3 class="text-2xl font-bold text-primary-800 mb-6 flex items-center">
+                        <svg class="w-6 h-6 text-accent-600 mr-3" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
+                        </svg>
+                        Frameworks & Technologies
+                    </h3>
+                    <div class="space-y-6">
+                        <!-- Django/Flask -->
+                        <div class="skill-item" data-skill="django">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="font-semibold text-primary-800">Django/Flask</span>
+                                <span class="text-sm text-accent-600 font-mono">92%</span>
+                            </div>
+                            <div class="w-full bg-primary-200 rounded-full h-3">
+                                <div class="bg-gradient-to-r from-accent-500 to-accent-600 h-3 rounded-full transition-all duration-1000 ease-out" style="width: 0%" data-width="92%"></div>
+                            </div>
+                            <p class="text-sm text-text-secondary mt-2">REST APIs, Authentication, ORM, Testing</p>
+                        </div>
+
+                        <!-- AWS -->
+                        <div class="skill-item" data-skill="aws">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="font-semibold text-primary-800">AWS</span>
+                                <span class="text-sm text-accent-600 font-mono">88%</span>
+                            </div>
+                            <div class="w-full bg-primary-200 rounded-full h-3">
+                                <div class="bg-gradient-to-r from-warning-400 to-warning-500 h-3 rounded-full transition-all duration-1000 ease-out" style="width: 0%" data-width="88%"></div>
+                            </div>
+                            <p class="text-sm text-text-secondary mt-2">EC2, Lambda, RDS, S3, CloudFormation</p>
+                        </div>
+
+                        <!-- Docker/Kubernetes -->
+                        <div class="skill-item" data-skill="docker">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="font-semibold text-primary-800">Docker/K8s</span>
+                                <span class="text-sm text-accent-600 font-mono">85%</span>
+                            </div>
+                            <div class="w-full bg-primary-200 rounded-full h-3">
+                                <div class="bg-gradient-to-r from-primary-500 to-primary-600 h-3 rounded-full transition-all duration-1000 ease-out" style="width: 0%" data-width="85%"></div>
+                            </div>
+                            <p class="text-sm text-text-secondary mt-2">Containerization, Orchestration, CI/CD</p>
+                        </div>
+
+                        <!-- Machine Learning -->
+                        <div class="skill-item" data-skill="ml">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="font-semibold text-primary-800">Machine Learning</span>
+                                <span class="text-sm text-accent-600 font-mono">87%</span>
+                            </div>
+                            <div class="w-full bg-primary-200 rounded-full h-3">
+                                <div class="bg-gradient-to-r from-success-400 to-success-500 h-3 rounded-full transition-all duration-1000 ease-out" style="width: 0%" data-width="87%"></div>
+                            </div>
+                            <p class="text-sm text-text-secondary mt-2">TensorFlow, PyTorch, Scikit-learn, NLP</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Interactive Skill Comparison Tool -->
+            <div class="mt-16 bg-white rounded-2xl p-8 shadow-elevation">
+                <h3 class="text-2xl font-bold text-primary-800 mb-6 text-center">Technology Comparison Tool</h3>
+                <p class="text-text-secondary text-center mb-8">Compare different technologies and see my expertise level in each</p>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <label class="block text-sm font-medium text-primary-700 mb-2">Select Technology A</label>
+                        <select id="tech-a" class="w-full p-3 border border-primary-300 rounded-lg focus:ring-2 focus:ring-accent-500 focus:border-transparent">
+                            <option value="python">Python</option>
+                            <option value="javascript">JavaScript</option>
+                            <option value="django">Django</option>
+                            <option value="aws">AWS</option>
+                            <option value="docker">Docker</option>
+                            <option value="ml">Machine Learning</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-primary-700 mb-2">Select Technology B</label>
+                        <select id="tech-b" class="w-full p-3 border border-primary-300 rounded-lg focus:ring-2 focus:ring-accent-500 focus:border-transparent">
+                            <option value="javascript">JavaScript</option>
+                            <option value="python">Python</option>
+                            <option value="django">Django</option>
+                            <option value="aws">AWS</option>
+                            <option value="docker">Docker</option>
+                            <option value="ml">Machine Learning</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div id="comparison-result" class="mt-8 p-6 bg-primary-50 rounded-lg hidden">
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div id="tech-a-result" class="text-center">
+                            <h4 class="font-bold text-primary-800 mb-2"></h4>
+                            <div class="w-24 h-24 mx-auto mb-4 bg-accent-100 rounded-full flex items-center justify-center">
+                                <span class="text-2xl font-bold text-accent-600"></span>
+                            </div>
+                            <p class="text-sm text-text-secondary"></p>
+                        </div>
+                        <div id="tech-b-result" class="text-center">
+                            <h4 class="font-bold text-primary-800 mb-2"></h4>
+                            <div class="w-24 h-24 mx-auto mb-4 bg-warning-100 rounded-full flex items-center justify-center">
+                                <span class="text-2xl font-bold text-warning-600"></span>
+                            </div>
+                            <p class="text-sm text-text-secondary"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center mt-6">
+                    <button onclick="compareSkills()" class="terminal-button">
+                        Compare Skills
+                        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Code Playground -->
+    <section id="code-playground" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-primary-800 mb-4">Interactive Code Playground</h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">Test code snippets, explore algorithms, and see my coding style in action. Try running the examples or write your own!</p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-8">
+                <!-- Code Editor -->
+                <div class="bg-primary-800 rounded-2xl overflow-hidden shadow-elevation-lg">
+                    <div class="bg-primary-700 px-6 py-3 flex items-center justify-between">
+                        <div class="flex items-center space-x-2">
+                            <div class="w-3 h-3 bg-error-400 rounded-full"></div>
+                            <div class="w-3 h-3 bg-warning-400 rounded-full"></div>
+                            <div class="w-3 h-3 bg-success-400 rounded-full"></div>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <select id="code-language" class="bg-primary-600 text-white text-sm rounded px-3 py-1 border-none focus:ring-2 focus:ring-accent-500">
+                                <option value="python">Python</option>
+                                <option value="javascript">JavaScript</option>
+                                <option value="sql">SQL</option>
+                            </select>
+                            <span class="text-accent-200 text-sm font-mono">main.py</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <textarea id="code-editor" class="w-full h-80 bg-transparent text-accent-100 font-mono text-sm resize-none focus:outline-none" placeholder="# Write your Python code here...
+def fibonacci(n):
+    if n <= 1:
+        return n
+    return fibonacci(n-1) + fibonacci(n-2)
+
+# Test the function
+for i in range(10):
+    print(f'F({i}) = {fibonacci(i)}')"># Sample Python Algorithm - Fibonacci Sequence
+def fibonacci(n):
+    """Generate fibonacci number using recursion"""
+    if n <= 1:
+        return n
+    return fibonacci(n-1) + fibonacci(n-2)
+
+# Optimized version with memoization
+def fibonacci_memo(n, memo={}):
+    if n in memo:
+        return memo[n]
+    if n <= 1:
+        return n
+    memo[n] = fibonacci_memo(n-1, memo) + fibonacci_memo(n-2, memo)
+    return memo[n]
+
+# Test both versions
+print("Standard Fibonacci:")
+for i in range(10):
+    print(f'F({i}) = {fibonacci(i)}')
+
+print("\nOptimized Fibonacci:")
+for i in range(10):
+    print(f'F({i}) = {fibonacci_memo(i)}')</textarea>
+                    </div>
+                    <div class="bg-primary-700 px-6 py-3 flex justify-between items-center">
+                        <div class="flex space-x-2">
+                            <button onclick="runCode()" class="bg-accent-600 hover:bg-accent-700 text-white px-4 py-2 rounded text-sm font-medium transition-colors duration-300">
+                                Run Code
+                            </button>
+                            <button onclick="clearCode()" class="bg-primary-600 hover:bg-primary-500 text-white px-4 py-2 rounded text-sm font-medium transition-colors duration-300">
+                                Clear
+                            </button>
+                            <button onclick="loadExample()" class="bg-warning-600 hover:bg-warning-700 text-white px-4 py-2 rounded text-sm font-medium transition-colors duration-300">
+                                Load Example
+                            </button>
+                        </div>
+                        <div class="text-accent-200 text-sm font-mono">
+                            Lines: <span id="line-count">15</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Output & Examples -->
+                <div class="space-y-6">
+                    <!-- Output Console -->
+                    <div class="bg-primary-900 rounded-2xl overflow-hidden shadow-elevation">
+                        <div class="bg-primary-800 px-6 py-3">
+                            <h3 class="text-accent-200 font-semibold">Output Console</h3>
+                        </div>
+                        <div id="code-output" class="p-6 h-64 overflow-y-auto">
+                            <div class="text-success-400 font-mono text-sm">
+                                <p>$ python main.py</p>
+                                <p class="text-accent-100 mt-2">Ready to execute your code...</p>
+                                <p class="text-text-secondary text-xs mt-4">Click "Run Code" to see the output here.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Code Examples -->
+                    <div class="bg-accent-50 rounded-2xl p-6">
+                        <h3 class="text-xl font-bold text-primary-800 mb-4">Featured Code Examples</h3>
+                        <div class="space-y-3">
+                            <button onclick="loadPythonExample('fibonacci')" class="w-full text-left p-3 bg-white rounded-lg hover:bg-accent-100 transition-colors duration-300">
+                                <div class="font-semibold text-primary-800">Fibonacci Algorithm</div>
+                                <div class="text-sm text-text-secondary">Recursive vs Memoized implementation</div>
+                            </button>
+                            <button onclick="loadPythonExample('sorting')" class="w-full text-left p-3 bg-white rounded-lg hover:bg-accent-100 transition-colors duration-300">
+                                <div class="font-semibold text-primary-800">Quick Sort Algorithm</div>
+                                <div class="text-sm text-text-secondary">Efficient sorting with divide & conquer</div>
+                            </button>
+                            <button onclick="loadPythonExample('api')" class="w-full text-left p-3 bg-white rounded-lg hover:bg-accent-100 transition-colors duration-300">
+                                <div class="font-semibold text-primary-800">REST API Example</div>
+                                <div class="text-sm text-text-secondary">Flask API with authentication</div>
+                            </button>
+                            <button onclick="loadPythonExample('ml')" class="w-full text-left p-3 bg-white rounded-lg hover:bg-accent-100 transition-colors duration-300">
+                                <div class="font-semibold text-primary-800">ML Model Training</div>
+                                <div class="text-sm text-text-secondary">Simple neural network with TensorFlow</div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skill Assessment Quizzes -->
+    <section id="skill-assessments" class="py-16 bg-primary-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-primary-800 mb-4">Skill Assessment Center</h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">Test your knowledge alongside mine with interactive quizzes and coding challenges. See how your skills compare!</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Python Assessment -->
+                <div class="bg-white rounded-2xl p-8 shadow-elevation hover:shadow-elevation-lg transition-all duration-300">
+                    <div class="w-16 h-16 bg-accent-100 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-accent-600" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0L19.2 12l-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary-800 mb-3">Python Mastery Quiz</h3>
+                    <p class="text-text-secondary mb-6">Test your Python knowledge with 15 questions covering basics to advanced concepts.</p>
+                    <div class="space-y-3 mb-6">
+                        <div class="flex justify-between text-sm">
+                            <span class="text-text-secondary">Difficulty:</span>
+                            <span class="text-accent-600 font-semibold">Intermediate</span>
+                        </div>
+                        <div class="flex justify-between text-sm">
+                            <span class="text-text-secondary">Duration:</span>
+                            <span class="text-primary-800">20 minutes</span>
+                        </div>
+                        <div class="flex justify-between text-sm">
+                            <span class="text-text-secondary">My Score:</span>
+                            <span class="text-success-600 font-semibold">94%</span>
+                        </div>
+                    </div>
+                    <button onclick="startQuiz('python')" class="w-full terminal-button">
+                        Start Assessment
+                    </button>
+                </div>
+
+                <!-- JavaScript Assessment -->
+                <div class="bg-white rounded-2xl p-8 shadow-elevation hover:shadow-elevation-lg transition-all duration-300">
+                    <div class="w-16 h-16 bg-warning-100 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-warning-600" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary-800 mb-3">JavaScript Challenge</h3>
+                    <p class="text-text-secondary mb-6">Modern JavaScript concepts including ES6+, async/await, and DOM manipulation.</p>
+                    <div class="space-y-3 mb-6">
+                        <div class="flex justify-between text-sm">
+                            <span class="text-text-secondary">Difficulty:</span>
+                            <span class="text-warning-600 font-semibold">Advanced</span>
+                        </div>
+                        <div class="flex justify-between text-sm">
+                            <span class="text-text-secondary">Duration:</span>
+                            <span class="text-primary-800">25 minutes</span>
+                        </div>
+                        <div class="flex justify-between text-sm">
+                            <span class="text-text-secondary">My Score:</span>
+                            <span class="text-success-600 font-semibold">87%</span>
+                        </div>
+                    </div>
+                    <button onclick="startQuiz('javascript')" class="w-full terminal-button">
+                        Start Assessment
+                    </button>
+                </div>
+
+                <!-- System Design Assessment -->
+                <div class="bg-white rounded-2xl p-8 shadow-elevation hover:shadow-elevation-lg transition-all duration-300">
+                    <div class="w-16 h-16 bg-success-100 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-success-600" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary-800 mb-3">System Design Quiz</h3>
+                    <p class="text-text-secondary mb-6">Architecture patterns, scalability, and distributed systems concepts.</p>
+                    <div class="space-y-3 mb-6">
+                        <div class="flex justify-between text-sm">
+                            <span class="text-text-secondary">Difficulty:</span>
+                            <span class="text-error-600 font-semibold">Expert</span>
+                        </div>
+                        <div class="flex justify-between text-sm">
+                            <span class="text-text-secondary">Duration:</span>
+                            <span class="text-primary-800">30 minutes</span>
+                        </div>
+                        <div class="flex justify-between text-sm">
+                            <span class="text-text-secondary">My Score:</span>
+                            <span class="text-success-600 font-semibold">91%</span>
+                        </div>
+                    </div>
+                    <button onclick="startQuiz('system-design')" class="w-full terminal-button">
+                        Start Assessment
+                    </button>
+                </div>
+            </div>
+
+            <!-- Quiz Modal -->
+            <div id="quiz-modal" class="fixed inset-0 bg-black bg-opacity-50 hidden z-50 flex items-center justify-center p-4">
+                <div class="bg-white rounded-2xl max-w-2xl w-full max-h-screen overflow-y-auto">
+                    <div class="p-8">
+                        <div class="flex justify-between items-center mb-6">
+                            <h3 id="quiz-title" class="text-2xl font-bold text-primary-800">Python Mastery Quiz</h3>
+                            <button onclick="closeQuiz()" class="text-text-secondary hover:text-primary-800 transition-colors duration-300">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <div id="quiz-content">
+                            <!-- Quiz questions will be loaded here -->
+                            <div class="mb-6">
+                                <div class="flex justify-between items-center mb-4">
+                                    <span class="text-sm text-text-secondary">Question <span id="current-question">1</span> of <span id="total-questions">5</span></span>
+                                    <div class="text-sm text-accent-600 font-mono">
+                                        Time: <span id="quiz-timer">05:00</span>
+                                    </div>
+                                </div>
+                                <div class="w-full bg-primary-200 rounded-full h-2 mb-6">
+                                    <div id="quiz-progress" class="bg-accent-600 h-2 rounded-full transition-all duration-300" style="width: 20%"></div>
+                                </div>
+                            </div>
+
+                            <div id="question-container">
+                                <h4 class="text-lg font-semibold text-primary-800 mb-4">What is the output of the following Python code?</h4>
+                                <div class="bg-primary-800 rounded-lg p-4 mb-6">
+                                    <code class="text-accent-100 font-mono text-sm">
+def mystery_function(x):<br />
+&nbsp;&nbsp;&nbsp;&nbsp;return x * 2 if x > 5 else x + 3<br /><br />
+result = mystery_function(4)<br />
+print(result)
+                                    </code>
+                                </div>
+                                <div class="space-y-3">
+                                    <label class="flex items-center p-3 bg-primary-50 rounded-lg cursor-pointer hover:bg-primary-100 transition-colors duration-300">
+                                        <input type="radio" name="quiz-answer" value="a" class="mr-3" />
+                                        <span>7</span>
+                                    </label>
+                                    <label class="flex items-center p-3 bg-primary-50 rounded-lg cursor-pointer hover:bg-primary-100 transition-colors duration-300">
+                                        <input type="radio" name="quiz-answer" value="b" class="mr-3" />
+                                        <span>8</span>
+                                    </label>
+                                    <label class="flex items-center p-3 bg-primary-50 rounded-lg cursor-pointer hover:bg-primary-100 transition-colors duration-300">
+                                        <input type="radio" name="quiz-answer" value="c" class="mr-3" />
+                                        <span>4</span>
+                                    </label>
+                                    <label class="flex items-center p-3 bg-primary-50 rounded-lg cursor-pointer hover:bg-primary-100 transition-colors duration-300">
+                                        <input type="radio" name="quiz-answer" value="d" class="mr-3" />
+                                        <span>None of the above</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="flex justify-between mt-8">
+                                <button onclick="previousQuestion()" class="bg-primary-200 text-primary-800 px-6 py-3 rounded-lg font-semibold hover:bg-primary-300 transition-colors duration-300" disabled>
+                                    Previous
+                                </button>
+                                <button onclick="nextQuestion()" class="terminal-button">
+                                    Next Question
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Assessment Results -->
+            <div class="mt-16 bg-white rounded-2xl p-8 shadow-elevation">
+                <h3 class="text-2xl font-bold text-primary-800 mb-6 text-center">My Assessment Results</h3>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="text-center">
+                        <div class="w-24 h-24 bg-accent-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-2xl font-bold text-accent-600">94%</span>
+                        </div>
+                        <h4 class="font-semibold text-primary-800 mb-2">Python Mastery</h4>
+                        <p class="text-sm text-text-secondary">Advanced level proficiency</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-24 h-24 bg-warning-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-2xl font-bold text-warning-600">87%</span>
+                        </div>
+                        <h4 class="font-semibold text-primary-800 mb-2">JavaScript</h4>
+                        <p class="text-sm text-text-secondary">Strong modern JS skills</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-24 h-24 bg-success-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-2xl font-bold text-success-600">91%</span>
+                        </div>
+                        <h4 class="font-semibold text-primary-800 mb-2">System Design</h4>
+                        <p class="text-sm text-text-secondary">Expert architecture knowledge</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learning Resources & Tutorials -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-primary-800 mb-4">Learning Resources</h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">Curated tutorials, guides, and resources I've created to help others master Python and AI development.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Tutorial 1 -->
+                <article class="bg-gradient-to-br from-accent-50 to-accent-100 rounded-2xl p-6 hover:shadow-elevation-lg transition-all duration-300 transform hover:-translate-y-1">
+                    <div class="w-12 h-12 bg-accent-600 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0L19.2 12l-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary-800 mb-3">Python for Beginners</h3>
+                    <p class="text-text-secondary mb-4">Complete guide from basics to advanced concepts with hands-on projects.</p>
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-sm text-accent-700 font-medium">12 Lessons</span>
+                        <span class="text-sm text-text-secondary">~6 hours</span>
+                    </div>
+                    <a href="contact.html" class="inline-flex items-center text-accent-600 font-semibold hover:text-accent-700 transition-colors duration-300">
+                        Start Learning
+                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </article>
+
+                <!-- Tutorial 2 -->
+                <article class="bg-gradient-to-br from-primary-50 to-primary-100 rounded-2xl p-6 hover:shadow-elevation-lg transition-all duration-300 transform hover:-translate-y-1">
+                    <div class="w-12 h-12 bg-primary-600 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary-800 mb-3">Machine Learning Fundamentals</h3>
+                    <p class="text-text-secondary mb-4">Build your first ML models with practical examples and real datasets.</p>
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-sm text-primary-700 font-medium">8 Lessons</span>
+                        <span class="text-sm text-text-secondary">~4 hours</span>
+                    </div>
+                    <a href="contact.html" class="inline-flex items-center text-primary-600 font-semibold hover:text-primary-700 transition-colors duration-300">
+                        Start Learning
+                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </article>
+
+                <!-- Tutorial 3 -->
+                <article class="bg-gradient-to-br from-success-50 to-success-100 rounded-2xl p-6 hover:shadow-elevation-lg transition-all duration-300 transform hover:-translate-y-1">
+                    <div class="w-12 h-12 bg-success-600 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary-800 mb-3">AWS Deployment Guide</h3>
+                    <p class="text-text-secondary mb-4">Deploy Python applications to AWS with best practices and security.</p>
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-sm text-success-700 font-medium">10 Lessons</span>
+                        <span class="text-sm text-text-secondary">~5 hours</span>
+                    </div>
+                    <a href="contact.html" class="inline-flex items-center text-success-600 font-semibold hover:text-success-700 transition-colors duration-300">
+                        Start Learning
+                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-16 bg-gradient-to-r from-accent-600 to-accent-700 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl lg:text-4xl font-bold mb-4">Ready to Level Up Your Skills?</h2>
+            <p class="text-xl text-accent-100 mb-8 max-w-3xl mx-auto">Whether you want to hire me for your next project or learn from my expertise, let's start a conversation about how we can work together.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact.html" class="bg-white text-accent-600 hover:bg-accent-50 font-semibold px-8 py-4 rounded-md transition-all duration-300 transform hover:scale-105">
+                    Hire Me for Your Project
+                </a>
+                <a href="contact.html" class="bg-transparent border-2 border-white text-white hover:bg-white hover:text-accent-600 font-semibold px-8 py-4 rounded-md transition-all duration-300">
+                    Start Learning Journey
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Brand -->
+                <div class="space-y-4">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 bg-accent-600 rounded-lg flex items-center justify-center">
+                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0L19.2 12l-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold">Harsha Dev</h3>
+                            <p class="text-sm text-accent-200 font-mono">Code Architect</p>
+                        </div>
+                    </div>
+                    <p class="text-primary-300">Building the future, line by Python line. Empowering developers and creating scalable solutions.</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="homepage.html" class="text-primary-300 hover:text-white transition-colors duration-300">Home</a></li>
+                        <li><a href="about.html" class="text-primary-300 hover:text-white transition-colors duration-300">About</a></li>
+                        <li><a href="skills_laboratory.html" class="text-primary-300 hover:text-white transition-colors duration-300">Skills Lab</a></li>
+                        <li><a href="services.html" class="text-primary-300 hover:text-white transition-colors duration-300">Services</a></li>
+                        <li><a href="contact.html" class="text-primary-300 hover:text-white transition-colors duration-300">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h4 class="font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="services.html" class="text-primary-300 hover:text-white transition-colors duration-300">Python Development</a></li>
+                        <li><a href="services.html" class="text-primary-300 hover:text-white transition-colors duration-300">AI Solutions</a></li>
+                        <li><a href="services.html" class="text-primary-300 hover:text-white transition-colors duration-300">Technical Mentoring</a></li>
+                        <li><a href="services.html" class="text-primary-300 hover:text-white transition-colors duration-300">Architecture Consulting</a></li>
+                    </ul>
+                </div>
+
+                <!-- Connect -->
+                <div>
+                    <h4 class="font-semibold mb-4">Connect</h4>
+                    <div class="flex space-x-4 mb-4">
+                        <a href="https://github.com/harshadev" class="w-10 h-10 bg-primary-700 rounded-lg flex items-center justify-center hover:bg-accent-600 transition-colors duration-300">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="https://linkedin.com/in/harshadev" class="w-10 h-10 bg-primary-700 rounded-lg flex items-center justify-center hover:bg-accent-600 transition-colors duration-300">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="https://twitter.com/harshadev" class="w-10 h-10 bg-primary-700 rounded-lg flex items-center justify-center hover:bg-accent-600 transition-colors duration-300">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <p class="text-primary-300 text-sm">Let's connect and build something amazing together!</p>
+                </div>
+            </div>
+
+            <div class="border-t border-primary-700 mt-8 pt-8 text-center">
+                <p class="text-primary-300">&copy; 2025 Harsha Dev. All Rights Reserved. Built with passion and Python.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Theme Toggle Functionality
+        const themeToggle = document.getElementById('theme-toggle');
+        const body = document.getElementById('main-body');
+        const nav = document.getElementById('main-nav');
+
+        // Check for saved theme preference or default to light mode
+        const currentTheme = localStorage.getItem('theme') || 'light';
+        if (currentTheme === 'dark') {
+            enableDarkMode();
+        }
+
+        themeToggle.addEventListener('click', () => {
+            if (body.classList.contains('dark-mode')) {
+                enableLightMode();
+            } else {
+                enableDarkMode();
+            }
+        });
+
+        function enableDarkMode() {
+            body.classList.add('dark-mode');
+            body.style.backgroundColor = '#1A202C';
+            body.style.color = '#E2E8F0';
+            nav.style.backgroundColor = 'rgba(26, 32, 44, 0.95)';
+            nav.style.borderColor = '#2D3748';
+            localStorage.setItem('theme', 'dark');
+            
+            // Update theme toggle icon
+            themeToggle.innerHTML = `
+                <svg class="w-5 h-5 text-accent-400" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z"/>
+                </svg>
+            `;
+        }
+
+        function enableLightMode() {
+            body.classList.remove('dark-mode');
+            body.style.backgroundColor = '#F7FAFC';
+            body.style.color = '#1A202C';
+            nav.style.backgroundColor = 'rgba(247, 250, 252, 0.95)';
+            nav.style.borderColor = '#E2E8F0';
+            localStorage.setItem('theme', 'light');
+            
+            // Update theme toggle icon
+            themeToggle.innerHTML = `
+                <svg class="w-5 h-5 text-primary-700" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z"/>
+                </svg>
+            `;
+        }
+
+        // Mobile Menu Toggle
+        const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for section navigation
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            if (section) {
+                section.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        }
+
+        // Skill Progress Animation
+        function animateSkillBars() {
+            const skillItems = document.querySelectorAll('.skill-item');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const progressBar = entry.target.querySelector('[data-width]');
+                        if (progressBar) {
+                            const width = progressBar.getAttribute('data-width');
+                            setTimeout(() => {
+                                progressBar.style.width = width;
+                            }, 200);
+                        }
+                    }
+                });
+            });
+
+            skillItems.forEach(item => observer.observe(item));
+        }
+
+        // Technology Comparison Tool
+        const techData = {
+            python: { name: 'Python', score: 95, description: '5+ years • Django, Flask, FastAPI, Data Science, ML' },
+            javascript: { name: 'JavaScript', score: 85, description: 'Node.js, React, Vue.js, ES6+' },
+            django: { name: 'Django/Flask', score: 92, description: 'REST APIs, Authentication, ORM, Testing' },
+            aws: { name: 'AWS', score: 88, description: 'EC2, Lambda, RDS, S3, CloudFormation' },
+            docker: { name: 'Docker/K8s', score: 85, description: 'Containerization, Orchestration, CI/CD' },
+            ml: { name: 'Machine Learning', score: 87, description: 'TensorFlow, PyTorch, Scikit-learn, NLP' }
+        };
+
+        function compareSkills() {
+            const techA = document.getElementById('tech-a').value;
+            const techB = document.getElementById('tech-b').value;
+            const resultContainer = document.getElementById('comparison-result');
+            const techAResult = document.getElementById('tech-a-result');
+            const techBResult = document.getElementById('tech-b-result');
+
+            if (techA === techB) {
+                alert('Please select different technologies to compare.');
+                return;
+            }
+
+            const dataA = techData[techA];
+            const dataB = techData[techB];
+
+            techAResult.querySelector('h4').textContent = dataA.name;
+            techAResult.querySelector('span').textContent = dataA.score + '%';
+            techAResult.querySelector('p').textContent = dataA.description;
+
+            techBResult.querySelector('h4').textContent = dataB.name;
+            techBResult.querySelector('span').textContent = dataB.score + '%';
+            techBResult.querySelector('p').textContent = dataB.description;
+
+            resultContainer.classList.remove('hidden');
+            resultContainer.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+
+        // Code Playground Functionality
+        const codeExamples = {
+            fibonacci: `# Sample Python Algorithm - Fibonacci Sequence
+def fibonacci(n):
+    """Generate fibonacci number using recursion"""
+    if n <= 1:
+        return n
+    return fibonacci(n-1) + fibonacci(n-2)
+
+# Optimized version with memoization
+def fibonacci_memo(n, memo={}):
+    if n in memo:
+        return memo[n]
+    if n <= 1:
+        return n
+    memo[n] = fibonacci_memo(n-1, memo) + fibonacci_memo(n-2, memo)
+    return memo[n]
+
+# Test both versions
+print("Standard Fibonacci:")
+for i in range(10):
+    print(f'F({i}) = {fibonacci(i)}')
+
+print("\\nOptimized Fibonacci:")
+for i in range(10):
+    print(f'F({i}) = {fibonacci_memo(i)}')`,
+            
+            sorting: `# Quick Sort Algorithm Implementation
+def quicksort(arr):
+    """
+    Efficient sorting algorithm using divide and conquer
+    Time Complexity: O(n log n) average case
+    """
+    if len(arr) <= 1:
+        return arr
+    
+    pivot = arr[len(arr) // 2]
+    left = [x for x in arr if x < pivot]
+    middle = [x for x in arr if x == pivot]
+    right = [x for x in arr if x > pivot]
+    
+    return quicksort(left) + middle + quicksort(right)
+
+# Test the algorithm
+test_array = [64, 34, 25, 12, 22, 11, 90, 88, 76, 50, 42]
+print("Original array:", test_array)
+sorted_array = quicksort(test_array)
+print("Sorted array:", sorted_array)
+
+# Performance comparison
+import time
+import random
+
+large_array = [random.randint(1, 1000) for _ in range(1000)]
+start_time = time.time()
+quicksort(large_array)
+end_time = time.time()
+print(f"\\nSorted 1000 elements in {end_time - start_time:.4f} seconds")`,
+
+            api: `# Flask REST API with Authentication
+from flask import Flask, request, jsonify
+from functools import wraps
+import jwt
+import datetime
+
+app = Flask(__name__)
+app.config['SECRET_KEY'] = 'your-secret-key'
+
+# Mock user database
+users = {
+    'admin': 'password123',
+    'user': 'mypassword'
+}
+
+def token_required(f):
+    @wraps(f)
+    def decorated(*args, **kwargs):
+        token = request.headers.get('Authorization')
+        if not token:
+            return jsonify({'message': 'Token is missing!'}), 401
+        try:
+            data = jwt.decode(token, app.config['SECRET_KEY'], algorithms=['HS256'])
+        except:
+            return jsonify({'message': 'Token is invalid!'}), 401
+        return f(*args, **kwargs)
+    return decorated
+
+@app.route('/login', methods=['POST'])
+def login():
+    auth = request.get_json()
+    if auth and auth['username'] in users and users[auth['username']] == auth['password']:
+        token = jwt.encode({
+            'user': auth['username'],
+            'exp': datetime.datetime.utcnow() + datetime.timedelta(hours=24)
+        }, app.config['SECRET_KEY'])
+        return jsonify({'token': token})
+    return jsonify({'message': 'Invalid credentials!'}), 401
+
+@app.route('/protected', methods=['GET'])
+@token_required
+def protected():
+    return jsonify({'message': 'This is a protected route!'})
+
+if __name__ == '__main__':
+    app.run(debug=True)`,
+
+            ml: `# Simple Neural Network with TensorFlow
+import tensorflow as tf
+from tensorflow import keras
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Load and preprocess the data
+(x_train, y_train), (x_test, y_test) = keras.datasets.mnist.load_data()
+x_train, x_test = x_train / 255.0, x_test / 255.0
+
+print(f"Training data shape: {x_train.shape}")
+print(f"Test data shape: {x_test.shape}")
+
+# Build the neural network model
+model = keras.Sequential([
+    keras.layers.Flatten(input_shape=(28, 28)),
+    keras.layers.Dense(128, activation='relu'),
+    keras.layers.Dropout(0.2),
+    keras.layers.Dense(10, activation='softmax')
+])
+
+# Compile the model
+model.compile(optimizer='adam',
+              loss='sparse_categorical_crossentropy',
+              metrics=['accuracy'])
+
+# Train the model
+print("Training the model...")
+history = model.fit(x_train, y_train, 
+                    epochs=5, 
+                    validation_split=0.1,
+                    verbose=1)
+
+# Evaluate the model
+test_loss, test_accuracy = model.evaluate(x_test, y_test, verbose=0)
+print(f"\\nTest accuracy: {test_accuracy:.4f}")
+
+# Make predictions
+predictions = model.predict(x_test[:5])
+for i in range(5):
+    predicted_digit = np.argmax(predictions[i])
+    actual_digit = y_test[i]
+    print(f"Image {i}: Predicted {predicted_digit}, Actual {actual_digit}")
+
+print("\\nModel training completed successfully!")`
+        };
+
+        function loadExample() {
+            const editor = document.getElementById('code-editor');
+            const language = document.getElementById('code-language').value;
+            
+            if (language === 'python') {
+                editor.value = codeExamples.fibonacci;
+            } else if (language === 'javascript') {
+                editor.value = `// JavaScript Example - Async/Await Pattern
+async function fetchUserData(userId) {
+    try {
+        const response = await fetch(\`/api/users/\${userId}\`);
+        if (!response.ok) {
+            throw new Error('User not found');
+        }
+        const userData = await response.json();
+        return userData;
+    } catch (error) {
+        console.error('Error fetching user data:', error);
+        return null;
+    }
+}
+
+// Usage example
+fetchUserData(123).then(user => {
+    if (user) {
+        console.log('User data:', user);
+    }
+});`;
+            } else if (language === 'sql') {
+                editor.value = `-- Advanced SQL Query Example
+WITH user_stats AS (
+    SELECT 
+        u.id,
+        u.username,
+        COUNT(p.id) as post_count,
+        AVG(p.likes) as avg_likes,
+        MAX(p.created_at) as last_post_date
+    FROM users u
+    LEFT JOIN posts p ON u.id = p.user_id
+    WHERE u.created_at >= '2024-01-01'
+    GROUP BY u.id, u.username
+),
+top_users AS (
+    SELECT *,
+        ROW_NUMBER() OVER (ORDER BY post_count DESC, avg_likes DESC) as rank
+    FROM user_stats
+    WHERE post_count > 0
+)
+SELECT 
+    username,
+    post_count,
+    ROUND(avg_likes, 2) as average_likes,
+    last_post_date,
+    rank
+FROM top_users
+WHERE rank <= 10
+ORDER BY rank;`;
+            }
+            updateLineCount();
+        }
+
+        function loadPythonExample(type) {
+            const editor = document.getElementById('code-editor');
+            editor.value = codeExamples[type] || codeExamples.fibonacci;
+            updateLineCount();
+        }
+
+        function runCode() {
+            const code = document.getElementById('code-editor').value;
+            const output = document.getElementById('code-output');
+            const language = document.getElementById('code-language').value;
+            
+            // Simulate code execution
+            output.innerHTML = `
+                <div class="text-success-400 font-mono text-sm">
+                    <p>$ ${language} main.${language === 'python' ? 'py' : language === 'javascript' ? 'js' : 'sql'}</p>
+                    <p class="text-accent-100 mt-2">Executing code...</p>
+                    <div class="mt-4 text-accent-100">
+                        <p>✓ Code syntax validated</p>
+                        <p>✓ Execution completed successfully</p>
+                        <p class="text-success-400 mt-2">Output would appear here in a real environment.</p>
+                        <p class="text-text-secondary text-xs mt-4">Note: This is a demo environment. In a real setup, your code would execute and show actual results.</p>
+                    </div>
+                </div>
+            `;
+        }
+
+        function clearCode() {
+            document.getElementById('code-editor').value = '';
+            document.getElementById('code-output').innerHTML = `
+                <div class="text-success-400 font-mono text-sm">
+                    <p>$ Ready for new code...</p>
+                    <p class="text-accent-100 mt-2">Editor cleared. Start typing your code!</p>
+                </div>
+            `;
+            updateLineCount();
+        }
+
+        function updateLineCount() {
+            const editor = document.getElementById('code-editor');
+            const lineCount = editor.value.split('\n').length;
+            document.getElementById('line-count').textContent = lineCount;
+        }
+
+        // Quiz Functionality
+        let currentQuizData = {};
+        let currentQuestionIndex = 0;
+        let quizTimer;
+
+        function startQuiz(type) {
+            const modal = document.getElementById('quiz-modal');
+            const title = document.getElementById('quiz-title');
+            
+            const quizTitles = {
+                'python': 'Python Mastery Quiz',
+                'javascript': 'JavaScript Challenge',
+                'system-design': 'System Design Quiz'
+            };
+            
+            title.textContent = quizTitles[type] || 'Technical Assessment';
+            currentQuestionIndex = 0;
+            
+            modal.classList.remove('hidden');
+            startQuizTimer();
+        }
+
+        function closeQuiz() {
+            const modal = document.getElementById('quiz-modal');
+            modal.classList.add('hidden');
+            if (quizTimer) {
+                clearInterval(quizTimer);
+            }
+        }
+
+        function startQuizTimer() {
+            let timeLeft = 300; // 5 minutes
+            const timerElement = document.getElementById('quiz-timer');
+            
+            quizTimer = setInterval(() => {
+                const minutes = Math.floor(timeLeft / 60);
+                const seconds = timeLeft % 60;
+                timerElement.textContent = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+                
+                if (timeLeft <= 0) {
+                    clearInterval(quizTimer);
+                    alert('Time\'s up! Quiz completed.');
+                    closeQuiz();
+                }
+                timeLeft--;
+            }, 1000);
+        }
+
+        function nextQuestion() {
+            // Simulate moving to next question
+            currentQuestionIndex++;
+            const progress = (currentQuestionIndex / 5) * 100;
+            document.getElementById('quiz-progress').style.width = progress + '%';
+            document.getElementById('current-question').textContent = Math.min(currentQuestionIndex + 1, 5);
+            
+            if (currentQuestionIndex >= 4) {
+                alert('Quiz completed! Your results will be displayed.');
+                closeQuiz();
+            }
+        }
+
+        function previousQuestion() {
+            if (currentQuestionIndex > 0) {
+                currentQuestionIndex--;
+                const progress = (currentQuestionIndex / 5) * 100;
+                document.getElementById('quiz-progress').style.width = progress + '%';
+                document.getElementById('current-question').textContent = currentQuestionIndex + 1;
+            }
+        }
+
+        // Initialize animations when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            animateSkillBars();
+            updateLineCount();
+            
+            // Add scroll effect to navigation
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 100) {
+                    nav.classList.add('shadow-lg');
+                } else {
+                    nav.classList.remove('shadow-lg');
+                }
+            });
+
+            // Update line count as user types
+            document.getElementById('code-editor').addEventListener('input', updateLineCount);
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>

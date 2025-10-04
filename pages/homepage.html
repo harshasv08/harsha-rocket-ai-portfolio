@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Harsha Dev - Python Developer & AI Education Catalyst</title>
+    <meta name="description" content="Junior Python Developer & AI Education Expert. Building the Future, Line by Python Line. Hire me for your next project or learn from my expertise." />
+    <meta name="keywords" content="Python Developer, AI Education, Machine Learning, AWS Certified, Technical Mentor, Software Architecture" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fharshadev1149back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"></script>
+</head>
+<body class="bg-background text-text-primary font-inter transition-all duration-300" id="main-body">
+    <!-- Navigation Header -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-primary-200 transition-all duration-300" id="main-nav">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-accent-600 rounded-lg flex items-center justify-center">
+                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0L19.2 12l-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-bold text-primary-800">Harsha Dev</h1>
+                        <p class="text-xs text-text-secondary font-mono">Code Architect</p>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="homepage.html" class="text-accent-600 font-medium border-b-2 border-accent-600 pb-1">Home</a>
+                    <a href="about.html" class="text-text-secondary hover:text-primary-800 transition-colors duration-300">About</a>
+                    <a href="skills_laboratory.html" class="text-text-secondary hover:text-primary-800 transition-colors duration-300">Skills Lab</a>
+                    <a href="services.html" class="text-text-secondary hover:text-primary-800 transition-colors duration-300">Services</a>
+                    <a href="contact.html" class="text-text-secondary hover:text-primary-800 transition-colors duration-300">Contact</a>
+                </div>
+
+                <!-- Theme Toggle & Mobile Menu -->
+                <div class="flex items-center space-x-4">
+                    <button id="theme-toggle" class="p-2 rounded-lg bg-primary-100 hover:bg-primary-200 transition-colors duration-300">
+                        <svg class="w-5 h-5 text-primary-700" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z"/>
+                        </svg>
+                    </button>
+                    <button class="md:hidden p-2 rounded-lg bg-primary-100 hover:bg-primary-200 transition-colors duration-300" id="mobile-menu-toggle">
+                        <svg class="w-6 h-6 text-primary-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div class="md:hidden hidden bg-background border-t border-primary-200" id="mobile-menu">
+            <div class="px-4 py-4 space-y-3">
+                <a href="homepage.html" class="block text-accent-600 font-medium">Home</a>
+                <a href="about.html" class="block text-text-secondary hover:text-primary-800 transition-colors duration-300">About</a>
+                <a href="skills_laboratory.html" class="block text-text-secondary hover:text-primary-800 transition-colors duration-300">Skills Lab</a>
+                <a href="services.html" class="block text-text-secondary hover:text-primary-800 transition-colors duration-300">Services</a>
+                <a href="contact.html" class="block text-text-secondary hover:text-primary-800 transition-colors duration-300">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-20 pb-16 bg-gradient-to-br from-background via-primary-50 to-accent-50 relative overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-5">
+            <div class="absolute inset-0" style="background-image: url('data:image/svg+xml,<svg width=" 60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><g fill="%23000000" fill-opacity="0.1"><circle cx="30" cy="30" r="2"></circle></g>'); background-size: 60px 60px;"></g></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="text-center lg:text-left">
+                <!-- Hero Content -->
+                <div class="space-y-8 max-w-4xl mx-auto lg:mx-0">
+                    <div class="space-y-4">
+                        <div class="inline-flex items-center px-4 py-2 bg-accent-100 text-accent-800 rounded-full text-sm font-medium">
+                            <span class="w-2 h-2 bg-accent-500 rounded-full mr-2 animate-pulse"></span>
+                            Available for new opportunities
+                        </div>
+                        <h1 class="text-4xl lg:text-6xl font-bold text-primary-800 leading-tight">
+                            Building the Future,<br />
+                            <span class="text-accent-600 font-mono typing-animation">Line by Python Line</span>
+                        </h1>
+                        <p class="text-xl text-text-secondary leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                            Junior Python Developer & AI Education Catalyst. I architect scalable systems, mentor the next generation of developers, and transform complex problems into elegant solutions.
+                        </p>
+                    </div>
+
+                    <!-- Quick Stats -->
+                    <div class="grid grid-cols-3 gap-4 lg:gap-6 max-w-md mx-auto lg:mx-0">
+                        <div class="text-center">
+                            <div class="text-2xl lg:text-3xl font-bold text-accent-600">5+</div>
+                            <div class="text-sm text-text-secondary">Years Experience</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-2xl lg:text-3xl font-bold text-accent-600">50+</div>
+                            <div class="text-sm text-text-secondary">Projects Completed</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-2xl lg:text-3xl font-bold text-accent-600">200+</div>
+                            <div class="text-sm text-text-secondary">Students Mentored</div>
+                        </div>
+                    </div>
+
+                    <!-- CTA Buttons -->
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <a href="contact.html" class="terminal-button text-center">
+                            <span class="flex items-center justify-center">
+                                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2-2v2m8 0V6a2 2 0 012 2v6a2 2 0 01-2 2H8a2 2 0 01-2-2V8a2 2 0 012-2V6"/>
+                                </svg>
+                                Hire Me
+                            </span>
+                        </a>
+                        <a href="skills_laboratory.html" class="bg-transparent border-2 border-accent-600 text-accent-600 hover:bg-accent-600 hover:text-white font-semibold px-6 py-3 rounded-md transition-all duration-300 text-center">
+                            <span class="flex items-center justify-center">
+                                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
+                                </svg>
+                                Explore Skills
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- User Journey Pathways -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-primary-800 mb-4">Choose Your Journey</h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">Whether you're looking to hire, learn, or collaborate, I've designed pathways tailored to your specific needs and goals.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Hiring Manager Path -->
+                <div class="bg-gradient-to-br from-accent-50 to-accent-100 rounded-2xl p-6 lg:p-8 hover:shadow-elevation-lg transition-all duration-300 transform hover:-translate-y-1">
+                    <div class="w-16 h-16 bg-accent-600 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2-2v2m8 0V6a2 2 0 012 2v6a2 2 0 01-2 2H8a2 2 0 01-2-2V8a2 2 0 012-2V6"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl lg:text-2xl font-bold text-primary-800 mb-4">For Hiring Managers</h3>
+                    <p class="text-text-secondary mb-6">Looking for a Junior Python developer who combines technical excellence with business impact? Explore my portfolio and see how I can contribute to your team.</p>
+                    <div class="space-y-3 mb-6">
+                        <div class="flex items-center text-sm text-text-secondary">
+                            <svg class="w-4 h-4 text-accent-600 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            5+ years Python expertise
+                        </div>
+                        <div class="flex items-center text-sm text-text-secondary">
+                            <svg class="w-4 h-4 text-accent-600 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            AWS Certified Professional
+                        </div>
+                        <div class="flex items-center text-sm text-text-secondary">
+                            <svg class="w-4 h-4 text-accent-600 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            Proven track record
+                        </div>
+                    </div>
+                    <a href="services.html" class="inline-flex items-center text-accent-600 font-semibold hover:text-accent-700 transition-colors duration-300">
+                        View My Work
+                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Learning Seeker Path -->
+                <div class="bg-gradient-to-br from-primary-50 to-primary-100 rounded-2xl p-6 lg:p-8 hover:shadow-elevation-lg transition-all duration-300 transform hover:-translate-y-1">
+                    <div class="w-16 h-16 bg-primary-600 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl lg:text-2xl font-bold text-primary-800 mb-4">For Learning Seekers</h3>
+                    <p class="text-text-secondary mb-6">Ready to master Python and AI? Join my educational community and accelerate your learning journey with hands-on mentorship and practical projects.</p>
+                    <div class="space-y-3 mb-6">
+                        <div class="flex items-center text-sm text-text-secondary">
+                            <svg class="w-4 h-4 text-primary-600 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            200+ students mentored
+                        </div>
+                        <div class="flex items-center text-sm text-text-secondary">
+                            <svg class="w-4 h-4 text-primary-600 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            Practical learning approach
+                        </div>
+                        <div class="flex items-center text-sm text-text-secondary">
+                            <svg class="w-4 h-4 text-primary-600 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            Career guidance included
+                        </div>
+                    </div>
+                    <a href="skills_laboratory.html" class="inline-flex items-center text-primary-600 font-semibold hover:text-primary-700 transition-colors duration-300">
+                        Start Learning
+                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Peer Developer Path -->
+                <div class="bg-gradient-to-br from-success-50 to-success-100 rounded-2xl p-6 lg:p-8 hover:shadow-elevation-lg transition-all duration-300 transform hover:-translate-y-1 md:col-span-2 lg:col-span-1">
+                    <div class="w-16 h-16 bg-success-600 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl lg:text-2xl font-bold text-primary-800 mb-4">For Peer Developers</h3>
+                    <p class="text-text-secondary mb-6">Fellow developer looking to collaborate, share knowledge, or explore innovative projects? Let's connect and build something amazing together.</p>
+                    <div class="space-y-3 mb-6">
+                        <div class="flex items-center text-sm text-text-secondary">
+                            <svg class="w-4 h-4 text-success-600 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            Open source contributor
+                        </div>
+                        <div class="flex items-center text-sm text-text-secondary">
+                            <svg class="w-4 h-4 text-success-600 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            Active tech community member
+                        </div>
+                        <div class="flex items-center text-sm text-text-secondary">
+                            <svg class="w-4 h-4 text-success-600 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            Collaboration focused
+                        </div>
+                    </div>
+                    <a href="contact.html" class="inline-flex items-center text-success-600 font-semibold hover:text-success-700 transition-colors duration-300">
+                        Let's Collaborate
+                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects Carousel -->
+    <section class="py-16 bg-primary-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-primary-800 mb-4">Featured Projects</h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">Explore some of my recent work that showcases the intersection of technical excellence and business impact.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-elevation hover:shadow-elevation-lg transition-all duration-300 transform hover:-translate-y-1">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="AI-Powered Analytics Dashboard" class="w-full h-full object-cover" loading="lazy" onerror="this.src='https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=800'; this.onerror=null;" />
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="px-3 py-1 bg-accent-100 text-accent-800 text-xs font-medium rounded-full">Machine Learning</span>
+                            <div class="flex items-center text-text-secondary text-sm">
+                                <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                </svg>
+                                4.9
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-primary-800 mb-2">AI-Powered Analytics Dashboard</h3>
+                        <p class="text-text-secondary mb-4 text-sm lg:text-base">Real-time data visualization platform with predictive analytics capabilities, serving 10K+ daily users.</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-2 py-1 bg-primary-100 text-primary-700 text-xs rounded">Python</span>
+                                <span class="px-2 py-1 bg-primary-100 text-primary-700 text-xs rounded">TensorFlow</span>
+                                <span class="px-2 py-1 bg-primary-100 text-primary-700 text-xs rounded">AWS</span>
+                            </div>
+                            <a href="services.html" class="text-accent-600 hover:text-accent-700 font-medium text-sm whitespace-nowrap">View Details →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-elevation hover:shadow-elevation-lg transition-all duration-300 transform hover:-translate-y-1">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.pixabay.com/photo/2018/05/08/08/44/artificial-intelligence-3382507_1280.jpg" alt="Educational AI Chatbot" class="w-full h-full object-cover" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="px-3 py-1 bg-primary-100 text-primary-800 text-xs font-medium rounded-full">Education Tech</span>
+                            <div class="flex items-center text-text-secondary text-sm">
+                                <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                </svg>
+                                4.8
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-primary-800 mb-2">Educational AI Chatbot</h3>
+                        <p class="text-text-secondary mb-4 text-sm lg:text-base">Intelligent tutoring system that adapts to individual learning styles, helping 500+ students improve their coding skills.</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-2 py-1 bg-primary-100 text-primary-700 text-xs rounded">NLP</span>
+                                <span class="px-2 py-1 bg-primary-100 text-primary-700 text-xs rounded">Django</span>
+                                <span class="px-2 py-1 bg-primary-100 text-primary-700 text-xs rounded">OpenAI</span>
+                            </div>
+                            <a href="services.html" class="text-accent-600 hover:text-accent-700 font-medium text-sm whitespace-nowrap">View Details →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-elevation hover:shadow-elevation-lg transition-all duration-300 transform hover:-translate-y-1">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.pexels.com/photos/590016/pexels-photo-590016.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Scalable Microservices Architecture" class="w-full h-full object-cover" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="px-3 py-1 bg-success-100 text-success-800 text-xs font-medium rounded-full">Architecture</span>
+                            <div class="flex items-center text-text-secondary text-sm">
+                                <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                </svg>
+                                5.0
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-primary-800 mb-2">Scalable Microservices Platform</h3>
+                        <p class="text-text-secondary mb-4 text-sm lg:text-base">Enterprise-grade microservices architecture handling 1M+ requests daily with 99.9% uptime and auto-scaling capabilities.</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-2 py-1 bg-primary-100 text-primary-700 text-xs rounded">Docker</span>
+                                <span class="px-2 py-1 bg-primary-100 text-primary-700 text-xs rounded">K8s</span>
+                                <span class="px-2 py-1 bg-primary-100 text-primary-700 text-xs rounded">FastAPI</span>
+                            </div>
+                            <a href="services.html" class="text-accent-600 hover:text-accent-700 font-medium text-sm whitespace-nowrap">View Details →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof & Certifications -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-primary-800 mb-4">Trusted by Industry Leaders</h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">Certified expertise backed by real results and testimonials from clients and students worldwide.</p>
+            </div>
+
+            <!-- Certifications -->
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+                <div class="bg-gradient-to-br from-warning-50 to-warning-100 rounded-xl p-6 text-center">
+                    <div class="w-16 h-16 bg-warning-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-primary-800 mb-2">AWS Certified</h3>
+                    <p class="text-sm text-text-secondary">Solutions Architect Professional</p>
+                </div>
+
+                <div class="bg-gradient-to-br from-accent-50 to-accent-100 rounded-xl p-6 text-center">
+                    <div class="w-16 h-16 bg-accent-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-primary-800 mb-2">Python Expert</h3>
+                    <p class="text-sm text-text-secondary">5+ Years Experience</p>
+                </div>
+
+                <div class="bg-gradient-to-br from-success-50 to-success-100 rounded-xl p-6 text-center">
+                    <div class="w-16 h-16 bg-success-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-primary-800 mb-2">AI Specialist</h3>
+                    <p class="text-sm text-text-secondary">Machine Learning & NLP</p>
+                </div>
+
+                <div class="bg-gradient-to-br from-primary-50 to-primary-100 rounded-xl p-6 text-center">
+                    <div class="w-16 h-16 bg-primary-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-primary-800 mb-2">Mentor</h3>
+                    <p class="text-sm text-text-secondary">200+ Students Guided</p>
+                </div>
+            </div>
+
+            <!-- Testimonials -->
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-primary-50 rounded-2xl p-8">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-primary-600 rounded-full flex items-center justify-center mr-4">
+                            <span class="text-white font-bold text-lg">S</span>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-primary-800">Sarah Johnson</h4>
+                            <p class="text-sm text-text-secondary">CTO, TechStart Inc.</p>
+                        </div>
+                    </div>
+                    <p class="text-text-secondary italic">"Harsha delivered an exceptional AI solution that transformed our data processing capabilities. His technical expertise and ability to explain complex concepts made the entire project seamless."</p>
+                    <div class="flex items-center mt-4">
+                        <div class="flex text-warning-400">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                        </div>
+                        <span class="ml-2 text-sm text-text-secondary">5.0/5</span>
+                    </div>
+                </div>
+
+                <div class="bg-accent-50 rounded-2xl p-8">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-accent-600 rounded-full flex items-center justify-center mr-4">
+                            <span class="text-white font-bold text-lg">M</span>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-primary-800">Michael Chen</h4>
+                            <p class="text-sm text-text-secondary">Python Developer, Google</p>
+                        </div>
+                    </div>
+                    <p class="text-text-secondary italic">"Harsha's mentorship was instrumental in my career transition to AI. His practical approach and real-world examples helped me land my dream job at Google. Highly recommended!"</p>
+                    <div class="flex items-center mt-4">
+                        <div class="flex text-warning-400">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                        </div>
+                        <span class="ml-2 text-sm text-text-secondary">5.0/5</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recent Blog Posts Preview -->
+    <section class="py-16 bg-primary-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-primary-800 mb-4">Latest Insights</h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">Stay updated with the latest trends in Python development, AI, and software architecture through my educational content.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Blog Post 1 -->
+                <article class="bg-white rounded-2xl overflow-hidden shadow-elevation hover:shadow-elevation-lg transition-all duration-300 transform hover:-translate-y-1">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Python Best Practices" class="w-full h-full object-cover" loading="lazy" onerror="this.src='https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=800'; this.onerror=null;" />
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="px-3 py-1 bg-accent-100 text-accent-800 text-xs font-medium rounded-full">Python</span>
+                            <time class="text-text-secondary text-sm">Oct 1, 2025</time>
+                        </div>
+                        <h3 class="text-xl font-bold text-primary-800 mb-2">10 Python Best Practices Every Developer Should Know</h3>
+                        <p class="text-text-secondary mb-4 text-sm lg:text-base">Discover essential Python coding practices that will make your code more readable, maintainable, and efficient.</p>
+                        <a href="skills_laboratory.html" class="inline-flex items-center text-accent-600 font-semibold hover:text-accent-700 transition-colors duration-300">
+                            Read More
+                            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 2 -->
+                <article class="bg-white rounded-2xl overflow-hidden shadow-elevation hover:shadow-elevation-lg transition-all duration-300 transform hover:-translate-y-1">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.pixabay.com/photo/2023/01/26/22/13/ai-generated-7747171_1280.jpg" alt="AI Career Guide" class="w-full h-full object-cover" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="px-3 py-1 bg-primary-100 text-primary-800 text-xs font-medium rounded-full">Career</span>
+                            <time class="text-text-secondary text-sm">Sep 28, 2025</time>
+                        </div>
+                        <h3 class="text-xl font-bold text-primary-800 mb-2">Breaking into AI: A Complete Career Roadmap</h3>
+                        <p class="text-text-secondary mb-4 text-sm lg:text-base">Your comprehensive guide to transitioning into AI development, from learning resources to landing your first role.</p>
+                        <a href="skills_laboratory.html" class="inline-flex items-center text-accent-600 font-semibold hover:text-accent-700 transition-colors duration-300">
+                            Read More
+                            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 3 -->
+                <article class="bg-white rounded-2xl overflow-hidden shadow-elevation hover:shadow-elevation-lg transition-all duration-300 transform hover:-translate-y-1">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Microservices Architecture" class="w-full h-full object-cover" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="px-3 py-1 bg-success-100 text-success-800 text-xs font-medium rounded-full">Architecture</span>
+                            <time class="text-text-secondary text-sm">Sep 25, 2025</time>
+                        </div>
+                        <h3 class="text-xl font-bold text-primary-800 mb-2">Building Scalable Microservices with Python</h3>
+                        <p class="text-text-secondary mb-4 text-sm lg:text-base">Learn how to design and implement microservices architecture that scales with your business needs.</p>
+                        <a href="skills_laboratory.html" class="inline-flex items-center text-accent-600 font-semibold hover:text-accent-700 transition-colors duration-300">
+                            Read More
+                            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-16 bg-gradient-to-r from-accent-600 to-accent-700 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl lg:text-4xl font-bold mb-4">Ready to Build Something Amazing?</h2>
+            <p class="text-xl text-accent-100 mb-8 max-w-3xl mx-auto">Whether you need a technical partner, want to learn Python/AI, or are looking for collaboration opportunities, I'm here to help you succeed.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact.html" class="bg-white text-accent-600 hover:bg-accent-50 font-semibold px-8 py-4 rounded-md transition-all duration-300 transform hover:scale-105">
+                    Start a Conversation
+                </a>
+                <a href="services.html" class="bg-transparent border-2 border-white text-white hover:bg-white hover:text-accent-600 font-semibold px-8 py-4 rounded-md transition-all duration-300">
+                    Explore Services
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Brand -->
+                <div class="space-y-4">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 bg-accent-600 rounded-lg flex items-center justify-center">
+                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0L19.2 12l-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold">Harsha Dev</h3>
+                            <p class="text-sm text-accent-200 font-mono">Code Architect</p>
+                        </div>
+                    </div>
+                    <p class="text-primary-300">Building the future, line by Python line. Empowering developers and creating scalable solutions.</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="homepage.html" class="text-primary-300 hover:text-white transition-colors duration-300">Home</a></li>
+                        <li><a href="about.html" class="text-primary-300 hover:text-white transition-colors duration-300">About</a></li>
+                        <li><a href="skills_laboratory.html" class="text-primary-300 hover:text-white transition-colors duration-300">Skills Lab</a></li>
+                        <li><a href="services.html" class="text-primary-300 hover:text-white transition-colors duration-300">Services</a></li>
+                        <li><a href="contact.html" class="text-primary-300 hover:text-white transition-colors duration-300">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h4 class="font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="services.html" class="text-primary-300 hover:text-white transition-colors duration-300">Python Development</a></li>
+                        <li><a href="services.html" class="text-primary-300 hover:text-white transition-colors duration-300">AI Solutions</a></li>
+                        <li><a href="services.html" class="text-primary-300 hover:text-white transition-colors duration-300">Technical Mentoring</a></li>
+                        <li><a href="services.html" class="text-primary-300 hover:text-white transition-colors duration-300">Architecture Consulting</a></li>
+                    </ul>
+                </div>
+
+                <!-- Connect -->
+                <div>
+                    <h4 class="font-semibold mb-4">Connect</h4>
+                    <div class="flex space-x-4 mb-4">
+                        <a href="https://github.com/harshadev" class="w-10 h-10 bg-primary-700 rounded-lg flex items-center justify-center hover:bg-accent-600 transition-colors duration-300">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="https://linkedin.com/in/harshadev" class="w-10 h-10 bg-primary-700 rounded-lg flex items-center justify-center hover:bg-accent-600 transition-colors duration-300">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="https://twitter.com/harshadev" class="w-10 h-10 bg-primary-700 rounded-lg flex items-center justify-center hover:bg-accent-600 transition-colors duration-300">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <p class="text-primary-300 text-sm">Let's connect and build something amazing together!</p>
+                </div>
+            </div>
+
+            <div class="border-t border-primary-700 mt-8 pt-8 text-center">
+                <p class="text-primary-300">&copy; 2025 Harsha Dev. All Rights Reserved. Built with passion and Python.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Theme Toggle Functionality
+        const themeToggle = document.getElementById('theme-toggle');
+        const body = document.getElementById('main-body');
+        const nav = document.getElementById('main-nav');
+
+        // Check for saved theme preference or default to light mode
+        const currentTheme = localStorage.getItem('theme') || 'light';
+        if (currentTheme === 'dark') {
+            enableDarkMode();
+        }
+
+        themeToggle.addEventListener('click', () => {
+            if (body.classList.contains('dark-mode')) {
+                enableLightMode();
+            } else {
+                enableDarkMode();
+            }
+        });
+
+        function enableDarkMode() {
+            body.classList.add('dark-mode');
+            body.style.backgroundColor = '#1A202C';
+            body.style.color = '#E2E8F0';
+            nav.style.backgroundColor = 'rgba(26, 32, 44, 0.95)';
+            nav.style.borderColor = '#2D3748';
+            localStorage.setItem('theme', 'dark');
+            
+            // Update theme toggle icon
+            themeToggle.innerHTML = `
+                <svg class="w-5 h-5 text-accent-400" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z"/>
+                </svg>
+            `;
+        }
+
+        function enableLightMode() {
+            body.classList.remove('dark-mode');
+            body.style.backgroundColor = '#F7FAFC';
+            body.style.color = '#1A202C';
+            nav.style.backgroundColor = 'rgba(247, 250, 252, 0.95)';
+            nav.style.borderColor = '#E2E8F0';
+            localStorage.setItem('theme', 'light');
+            
+            // Update theme toggle icon
+            themeToggle.innerHTML = `
+                <svg class="w-5 h-5 text-primary-700" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z"/>
+                </svg>
+            `;
+        }
+
+        // Mobile Menu Toggle
+        const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add scroll effect to navigation
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                nav.classList.add('shadow-lg');
+            } else {
+                nav.classList.remove('shadow-lg');
+            }
+        });
+
+        // Typing animation restart on scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const typingElement = entry.target.querySelector('.typing-animation');
+                    if (typingElement) {
+                        typingElement.style.animation = 'none';
+                        setTimeout(() => {
+                            typingElement.style.animation = 'typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite';
+                        }, 100);
+                    }
+                }
+            });
+        });
+
+        // Observe hero section for typing animation
+        const heroSection = document.querySelector('section');
+        if (heroSection) {
+            observer.observe(heroSection);
+        }
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>
